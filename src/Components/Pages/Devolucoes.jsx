@@ -4,7 +4,7 @@ import logo from './logo.png';
  
 const Devolucoes = () => {
   return (
-    <div>
+    <div className='maria'>
       <h1>DEVOLUÇÕES</h1>
       {[
 
