@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 import './Ocorrencia.css';
 
 const Ocorrencia = () => {
@@ -32,6 +32,19 @@ const Ocorrencia = () => {
 
         if (window.confirm('Tem certeza que deseja enviar?')) {
             window.location.href = '/Solicitacoes'; 
+        }
+    };
+
+    const getSelectClass = (priority) => {
+        switch (priority) {
+            case 'Emergência':
+                return 'emergencia';
+            case 'Urgente':
+                return 'urgente';
+            case 'Eletiva':
+                return 'eletiva';
+            default:
+                return '';
         }
     };
 
@@ -84,13 +97,12 @@ const Ocorrencia = () => {
                 </p>
                 <br />
                 <p>
-                    <strong>Laboratório :</strong>
+                    <strong>Ambiente :</strong>
                     <input 
-                        type="number" 
+                        type="text" 
                         name="lab" 
                         value={formData.lab} 
                         onChange={handleChange} 
-                        min="0" 
                     />
                     &nbsp;&nbsp;&nbsp;
                     <strong>Andar :</strong>
@@ -118,10 +130,11 @@ const Ocorrencia = () => {
                         name="prioridade" 
                         value={formData.prioridade} 
                         onChange={handleChange}
-                    >
+                        className={getSelectClass(formData.prioridade)} 
+                    > 
+                        <option value="Emergência">Emergência</option>
                         <option value="Urgente">Urgente</option>
-                        <option value="Mediano">Mediano</option>
-                        <option value="Nao urgente">Não urgente</option>
+                        <option value="Eletiva">Eletiva</option>
                     </select>
                 </p>
             </div>
