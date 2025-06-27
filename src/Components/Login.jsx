@@ -6,13 +6,13 @@ import logo from './logo.png';
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log('Username:', username);
         console.log('Password:', password);
-        navigate('/Inicial'); 
+        navigate('/Inicial');
     };
 
     return (
@@ -26,7 +26,7 @@ const Login = () => {
                         <input
                             type="text"
                             name="username"
-                            placeholder="RM do Usuário"
+                            placeholder="E-mail"
                             required
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
@@ -40,8 +40,21 @@ const Login = () => {
                             required
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
+
                         />
+                        {/* Link para recuperar senha */}
+                        <div className="recuperar-senha">
+                            <a href="/recuperar-senha">Esqueceu a senha?</a>
+                        </div>
                         <button type="submit">Entrar</button>
+
+                        {/* Link para criar conta */}
+                        <div className="criar-conta">
+                            <a href="/criar-conta">Não tem uma conta? Crie uma conta</a>
+                        </div>
+
+                        
+
                     </form>
                 </div>
             </div>
