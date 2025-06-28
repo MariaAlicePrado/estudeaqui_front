@@ -12,10 +12,10 @@ const Navbar = () => {
     <header className='header'>
       <a href='/' className='logo'><img src={logo} alt='Logo'></img></a>
       <nav className='navbar'>
-        <a href='/Solicitacoes'>Solicitações</a>
-        <a href='/Devolucoes'>Devoluções</a>
-        <a href='/Ocorrencia'>Nova Ocorrência</a>
-        <a href='/Inicial'>Inicial</a>
+        <a href='/Solicitacoes'>Início</a>
+        <a href='/Devolucoes'>Professores</a>
+        <a href='/Ocorrencia'>Agenda</a>
+        <a href='/Inicial'>Perfil</a>
         <a href='/'>Sair</a>
       </nav>
     </header>

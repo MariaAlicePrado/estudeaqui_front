@@ -49,8 +49,8 @@ const Login = () => {
                         <button type="submit">Entrar</button>
 
                         {/* Link para criar conta */}
-                        <div className="criar-conta">
-                            <a href="/criar-conta">Não tem uma conta? Crie uma conta</a>
+                        <div className="cadastro">
+                            <a href="/cadastro">Não possui cadastro? Crie uma conta.</a>
                         </div>
 
                         

@@ -1,0 +1,33 @@
+.custom-background {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(#956191, #000000 200%);
+}
+ 
+ 
+.card{
+  background-color: #fafafa;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 400px;
+  width: 90%;
+  border: 1px solid #956191;
+}
+
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+ 
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}

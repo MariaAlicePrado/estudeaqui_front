@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     padding: 20px 10px;
-    background: #D3D3D3;
+    background: #956191;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,10 +24,10 @@
  
 .navbar a {
     position: relative;
-    font-size: 18px;
+    font-size: 20px;
     color: #000000;
     font-weight: 500;
-    margin-left: 40px;
+    margin-left: 50px;
     text-decoration: none;
 }
  

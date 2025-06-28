@@ -3,7 +3,7 @@
   margin: 0;
   overflow: hidden;
   font-family: 'Outfit', sans-serif;
-  background: linear-gradient(rgb(124, 5, 137), #220422 420%);
+  background: linear-gradient(#956191, #000000 200%);
 }
  
 .login-container {
@@ -15,12 +15,12 @@
  
 .card{
   background-color: #fafafa;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 40px;
   max-width: 400px;
   width: 90%;
-  border: 1px solid #808080d8;
+  border: 1px solid #956191;
 }
  
 .logo-container {
@@ -50,25 +50,27 @@
   color: #000000;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 30px;
+  font-weight: bold;
   cursor: pointer;
   width: 100%;
   box-sizing: border-box;
 }
 .recuperar-senha,
-.criar-conta {
+.cadastro {
   width: 100%;           /* ocupa toda a largura do formulário */
   text-align: center;    /* centraliza o conteúdo */
   margin-top: 10px;      /* espaço entre os elementos */
   font-size: 14px;
 }
 .recuperar-senha a,
-.criar-conta a {
-  color: #007bff;
+.cadastro a {
+  color: #956191;
   text-decoration: none;
 }
 
 .recuperar-senha a:hover,
-.criar-conta a:hover {
+.cadastro a:hover {
   text-decoration: underline;
+  color: #653463;
 }
